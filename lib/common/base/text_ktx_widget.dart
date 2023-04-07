@@ -4,7 +4,7 @@ import 'package:flutter_base/res/res_font.dart';
 
 ///
 /// <pre>
-///     author : SZYC
+///     author : pengMaster
 ///     e-mail : 
 ///     time   : 2/22/22 8:06 PM
 ///     desc   : 文字公共组件

@@ -119,17 +119,18 @@ dependencies:
 
   flutter_printer:
 #    本地依赖
-    path: ../../yc_project/flutter_printer
+    path: ../yc_project/flutter_printer
     #线上依赖
 #    git:
 #      url: git://39.106.125.67:10105/flutter/flutter_printer.git
 
   flutter_calendar:
     #本地依赖
-    path: ../../yc_project/flutter_calendar
+    path: ../yc_project/flutter_calendar
     #线上依赖
 #    git:
 #      url: git://39.106.125.67:10105/flutter/flutter_calendar.git
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

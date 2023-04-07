@@ -4,7 +4,7 @@ import 'package:permission_handler/permission_handler.dart';
 
 ///
 /// <pre>
-///     author : SZYC
+///     author : pengMaster
 ///     e-mail : 
 ///     time   : 3/3/22 4:00 PM
 ///     desc   : 权限扩展

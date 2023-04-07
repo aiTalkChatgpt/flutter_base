@@ -21,7 +21,7 @@ import 'common_result.dart';
 ///
 /// <pre>
 ///     author : Wp
-///     e-mail : 神州友创
+///     e-mail :
 ///     time   : 2019/7/7 8:35 PM
 ///     desc   : 网络请求工具类
 ///     version: 1.0

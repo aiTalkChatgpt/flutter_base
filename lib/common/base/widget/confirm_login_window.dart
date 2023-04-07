@@ -8,7 +8,7 @@ import '../text_ktx_widget.dart';
 
 ///
 /// <pre>
-///     author : SZYC
+///     author : pengMaster
 ///     e-mail :
 ///     time   : 2020/11/30 2:08 PM
 ///     desc   : 确认框

@@ -7,7 +7,7 @@ import 'feed_list_page.dart';
 
 ///
 /// <pre>
-///     author : SZYC
+///     author : pengMaster
 ///     e-mail : 
 ///     time   : 2021/12/14 11:07 AM
 ///     desc   :

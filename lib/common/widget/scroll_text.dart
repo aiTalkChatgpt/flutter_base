@@ -7,7 +7,7 @@ import 'package:flutter_vertical_marquee/flutter_vertical_marquee.dart';
 
 ///
 /// <pre>
-///     author : SZYC
+///     author : pengMaster
 ///     e-mail :
 ///     time   : 2020/11/30 12:34 PM
 ///     desc   : 通知

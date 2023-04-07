@@ -14,7 +14,7 @@ import 'base_function.dart';
 
 ///
 /// <pre>
-///     author : SZYC
+///     author : pengMaster
 ///     e-mail : 
 ///     time   : 5/8/22 5:34 PM
 ///     desc   : 图片扩展类

@@ -6,7 +6,7 @@ import 'package:flutter_base/entry/key_value.dart';
 
 ///
 /// <pre>
-///     author : SZYC
+///     author : pengMaster
 ///     e-mail : 
 ///     time   : 2021/4/22 6:07 PM
 ///     desc   : 测试类
@@ -93,11 +93,11 @@ class TestBaseProvider with ChangeNotifier{
     ]))));
     feedList.add(FeedListBean("1",feedBeanAddTestData(BaseFeedBean(true,true,fileUrls: [
       MultiFileBean(0,image1),
-      MultiFileBean(2,"/神州友创.doc"),
+      MultiFileBean(2,"/测试.doc"),
     ]))));
     feedList.add(FeedListBean("1",feedBeanAddTestData(BaseFeedBean(true,true,fileUrls: [
-      MultiFileBean(2,"/神州友创.pdf"),
-      MultiFileBean(2,"/神州友创.docx"),
+      MultiFileBean(2,"/测试.pdf"),
+      MultiFileBean(2,"/测试.docx"),
     ]))));
     notifyListeners();
   }

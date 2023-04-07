@@ -1,7 +1,7 @@
 ///
 /// <pre>
 ///     author : Wp
-///     e-mail : 神州友创
+///     e-mail :
 ///     time   : 2019/7/7 8:35 PM
 ///     desc   : 接口请求方法全局常量
 ///     version: 1.0

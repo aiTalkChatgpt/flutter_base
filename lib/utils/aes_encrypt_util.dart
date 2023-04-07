@@ -3,7 +3,7 @@ import 'package:encrypt/encrypt.dart';
 
 ///
 /// <pre>
-///     author : SZYC
+///     author : pengMaster
 ///     e-mail : 
 ///     time   : 5/25/22 11:02 PM
 ///     desc   : 加密解密

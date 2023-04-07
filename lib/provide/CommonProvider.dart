@@ -10,7 +10,7 @@ import 'package:flutter_base/res/index_res.dart';
 
 ///
 /// <pre>
-///     author : SZYC
+///     author : pengMaster
 ///     e-mail : 
 ///     time   : 2021/4/22 6:07 PM
 ///     desc   : 共享provider

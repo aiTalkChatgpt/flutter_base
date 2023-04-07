@@ -1,4 +1,4 @@
-package com.example.flutter_base
+package com.example.ai_talk_chat_gpt
 
 import androidx.annotation.NonNull
 import com.example.android_plugin.PluginActivity

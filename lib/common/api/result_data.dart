@@ -2,7 +2,7 @@
 ///
 /// <pre>
 ///     author : Wp
-///     e-mail : 神州友创
+///     e-mail :
 ///     time   : 2019/7/7 8:35 PM
 ///     desc   : 返回数据传输
 ///     version: 1.0
