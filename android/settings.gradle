@@ -1,0 +1,17 @@
+include ':app'
+include ':android_plugin'
+def libraryPath = "../../"
+//include project(':flutter_plugin').file('android/android_plugin')
+//include(':android_plugin')
+//project(':android_plugin').projectDir = new File('/Users/admin/flutter_projects/yc_project/flutter_electric_total_menu/flutter_plugin/android/android_plugin')
+
+print(rootProject.projectDir)
+def localPropertiesFile = new File(rootProject.projectDir, "local.properties")
+def properties = new Properties()
+
+assert localPropertiesFile.exists()
+localPropertiesFile.withReader("UTF-8") { reader -> properties.load(reader) }
+
+def flutterSdkPath = properties.getProperty("flutter.sdk")
+assert flutterSdkPath != null, "flutter.sdk not set in local.properties"
+apply from: "$flutterSdkPath/packages/flutter_tools/gradle/app_plugin_loader.gradle"

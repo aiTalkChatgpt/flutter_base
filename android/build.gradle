@@ -1,0 +1,70 @@
+buildscript {
+    ext.kotlin_version = '1.3.71'
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        google()
+        jcenter()
+        maven { url "http://download.flutter.io" }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        google()
+        jcenter()
+        maven { url "http://download.flutter.io" }
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+//更换jar 版本，删除相关文件后再 pub get ，执行该任务一键删除
+task cleanFileForJarVersion(){
+    doFirst {
+        println("---------开始清理---------")
+        File file = new File(rootDir.getParent()+"/.dart_tool")
+        file.deleteDir()
+        println("---------.dart_tool删除成功---------")
+        File file0 = new File(rootDir.getParent()+"/build")
+        file0.deleteDir()
+        println("---------build删除成功---------")
+        File file1 = new File(rootDir.getParent()+"/.flutter-plugins")
+        file1.delete()
+        println("---------.flutter-plugins删除成功---------")
+        File file2 = new File(rootDir.getParent()+"/.flutter-plugins-dependencies")
+        file2.delete()
+        println("---------.flutter-plugins-dependencies删除成功---------")
+        File file3 = new File(rootDir.getParent()+"/.packages")
+        file3.delete()
+        println("---------.packages删除成功---------")
+        File file4 = new File(rootDir.getParent()+"/pubspec.lock")
+        file4.delete()
+        println("---------pubspec.lock删除成功---------")
+        println("---------清理结束---------")
+
+        println("---------开始flutter pub get---------")
+        exec {
+            commandLine 'flutter','pub','get'
+        }
+        println("---------完成flutter pub get---------")
+    }
+
+}
