@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_base/ui/test/db_list_page.dart';
 import 'package:flutter_base/ui/test/device_id_page.dart';
 import 'package:flutter_base/ui/test/feed_list_page.dart';
-import 'package:flutter_base/ui/test/printer_page.dart';
 import 'package:flutter_base/ui/test/scan_code_page.dart';
 import 'package:flutter_base/ui/test/tab_page.dart';
 import 'package:flutter_base/common/ui/weather_page_view.dart';
@@ -50,7 +49,6 @@ class BaseRouter{
     routers[weatherGridViewWidget] = WeatherGridViewWidget();
     routers[testSamplePage] = TestSamplePage();
     routers[fullCalendarPage] = FullCalendarPage();
-    routers[printerPage] = PrinterPage();
   }
 
   ///
